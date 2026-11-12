@@ -1,13 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form id="billForm">
+			<input type="text" id="consumerName" placeholder="Consumer Name" />
+			<input type="text" id="meterNumber" placeholder="Meter Number" />
+			<input type="text" id="units" placeholder="Units Consumed (kWh)" />
+			<button type="submit">Calculate Bill</button>
+		</form>
 
-  <script src="./script.js"></script>
-</body>
+		<div class="display">
+			<div id="displayResult"></div>
+		</div>
+
+		<script src="script.js"></script>
+  </body>
 </html>
